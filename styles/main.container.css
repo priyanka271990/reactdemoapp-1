@@ -1,0 +1,5 @@
+.mainContainer {
+	background-color: #ADD8E6;
+	height: calc(100vh - 30px);
+	width: 100%;
+}

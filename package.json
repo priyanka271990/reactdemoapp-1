@@ -13,16 +13,6 @@
     "setup": "npm install && npm run validate",
     "validate": "npm-run-all lint test build"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mzabriskie/react-example"
-  },
-  "author": "Matt Zabriskie",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mzabriskie/react-example/issues"
-  },
-  "homepage": "https://github.com/mzabriskie/react-example",
   "dependencies": {
     "axios": "0.13.1",
     "bootstrap": "^3.3.5",
