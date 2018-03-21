@@ -2,13 +2,17 @@ import React, { Component } from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {UserSelected} from '../actions/index';
+import UserDetails from '../components/user.details.component';
 
 class User extends Component {
 
 	usersDetails = function (that) {
 		return this.props.user.map(function (userObj) {
 			return (
-				<li key={userObj.id} onClick={() => that.props.UserSelected(userObj)}> {userObj.firstName} {userObj.lastName} </li>
+				<div>
+					<li> {userObj.firstName} {userObj.lastName} </li>
+					<input type="button" value="Get Details" key={userObj.id} onClick={() => that.props.UserSelected(userObj)}></input>
+				</div>
 			);
 		});
 	}
@@ -24,6 +28,7 @@ class User extends Component {
 						{this.usersDetails(that)}
 					</ul>
 					<h2>users Details :</h2>
+					<UserDetails />
 				</div>
 			</div>
 		);
