@@ -1,12 +1,12 @@
 import {combineReducers} from 'redux';
 import UserReducers from './user.reducers';
-import MovieReducers from './movie.reducers';
+import RefrigeratorReducers from './refrigerator.reducers';
 import ActiveUserReducers from './active.user.reducers';
 import TelevisionReducers from './television.reducers';
 
 const allReducers = combineReducers({
 	activeUser: ActiveUserReducers,
-	movie: MovieReducers,
+	refrigerator: RefrigeratorReducers,
 	television: TelevisionReducers,
 	user: UserReducers,
 });
